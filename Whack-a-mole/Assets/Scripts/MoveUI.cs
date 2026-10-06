@@ -1,0 +1,226 @@
+using System.Collections;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+public class MoveUI : MonoBehaviour, IPointerClickHandler
+{
+    [Header("Animator")]
+    [SerializeField] private Animator animator;
+
+    [Header("Image")]
+    [SerializeField] private Image moleImage;
+
+    [Header("Animation")]
+    [SerializeField] private string upAnimationName = "Mole_Up";
+    [SerializeField] private string downAnimationName = "Mole_Down";
+
+    [Header("Timing")]
+    [SerializeField] private float stayTime = 1.0f;
+    [SerializeField] private float downAnimationTime = 0.5f;
+
+    [Header("Hit")]
+    [SerializeField] private Sprite hitSprite;
+
+    [Tooltip("클릭된 스프라이트가 보여지는 시간")]
+    [SerializeField] private float hitDisplayTime = 1.0f;
+
+    [Header("Score")]
+    [SerializeField] private int scoreValue = 1;
+
+    [Header("Mole Type")]
+    [SerializeField] private bool isBadMole = false;
+
+    [Header("Bad Mole")]
+    [SerializeField] private int badMoleScore = -2;
+
+    private bool isActive;
+    private bool isHit;
+
+    private void Awake()
+    {
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
+
+        if (moleImage == null)
+        {
+            moleImage = GetComponent<Image>();
+        }
+    }
+
+    // 두더지 등장
+    public void ShowMole()
+    {
+        isActive = true;
+        isHit = false;
+
+        if (moleImage != null)
+        {
+            moleImage.enabled = true;
+        }
+
+        if (animator != null)
+        {
+            animator.enabled = true;
+
+            animator.Play(
+                upAnimationName,
+                0,
+                0f
+            );
+        }
+    }
+
+    // 두더지 내려가기
+    public void HideMole()
+    {
+        // 이미 클릭된 두더지는 무시
+        if (isHit)
+        {
+            return;
+        }
+
+        isActive = false;
+
+        if (animator != null)
+        {
+            animator.Play(
+                downAnimationName,
+                0,
+                0f
+            );
+        }
+
+        // 놓친 두더지는 아무 처리도 하지 않음
+        // 일반 / 특수 / 배드 모두 콤보 유지
+    }
+
+    // 두더지 클릭
+    public void OnPointerClick(
+        PointerEventData eventData
+    )
+    {
+        // 게임 종료 후 클릭 방지
+        if (GameManager.Instance != null &&
+            GameManager.Instance.IsGameOver())
+        {
+            return;
+        }
+
+        // 올라와 있지 않으면 클릭 무시
+        if (!isActive)
+        {
+            return;
+        }
+
+        // 이미 클릭했다면 중복 처리 방지
+        if (isHit)
+        {
+            return;
+        }
+
+        isHit = true;
+        isActive = false;
+
+        // =========================
+        // 배드 두더지
+        // =========================
+        if (isBadMole)
+        {
+            // 배드 두더지를 잡으면 콤보 초기화
+            if (ComboManager.Instance != null)
+            {
+                ComboManager.Instance.RegisterBadHit();
+            }
+
+            // 점수 -2
+            if (ScoreManager.Instance != null)
+            {
+                ScoreManager.Instance.AddScore(
+                    badMoleScore
+                );
+            }
+        }
+        // =========================
+        // 일반 / 특수 두더지
+        // =========================
+        else
+        {
+            // 콤보 +1
+            if (ComboManager.Instance != null)
+            {
+                ComboManager.Instance.RegisterNormalHit();
+            }
+
+            // 기본 배율
+            int multiplier = 1;
+
+            // 현재 콤보 배율 가져오기
+            if (ComboManager.Instance != null)
+            {
+                multiplier =
+                    ComboManager.Instance.GetMultiplier();
+            }
+
+            // 점수 × 배율
+            int finalScore =
+                scoreValue * multiplier;
+
+            if (ScoreManager.Instance != null)
+            {
+                ScoreManager.Instance.AddScore(
+                    finalScore
+                );
+            }
+        }
+
+        // 클릭 후 처리
+        StartCoroutine(HitRoutine());
+    }
+
+    // 클릭 후 처리
+    private IEnumerator HitRoutine()
+    {
+        // 애니메이션 정지
+        if (animator != null)
+        {
+            animator.enabled = false;
+        }
+
+        // 클릭된 스프라이트로 변경
+        if (hitSprite != null &&
+            moleImage != null)
+        {
+            moleImage.sprite = hitSprite;
+            moleImage.enabled = true;
+        }
+
+        // 클릭된 모습 유지
+        yield return new WaitForSeconds(
+            hitDisplayTime
+        );
+
+        // 두더지 삭제
+        Destroy(gameObject);
+    }
+
+    // 현재 두더지가 활성 상태인지 확인
+    public bool IsActive()
+    {
+        return isActive;
+    }
+
+    // 현재 두더지가 클릭됐는지 확인
+    public bool IsHit()
+    {
+        return isHit;
+    }
+
+    // 배드 두더지인지 확인
+    public bool IsBadMole()
+    {
+        return isBadMole;
+    }
+}
