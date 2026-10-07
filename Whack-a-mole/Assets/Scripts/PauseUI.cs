@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PauseUI : MonoBehaviour
@@ -19,9 +20,34 @@ public class PauseUI : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1f;
+
         SetPausePanel(false);
     }
 
+    private void Update()
+    {
+        // ESC 키를 누르면 일시정지 / 재개
+        if (Keyboard.current != null &&
+            Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            TogglePause();
+        }
+    }
+
+    // ESC / 버튼으로 일시정지 상태 전환
+    public void TogglePause()
+    {
+        if (isPaused)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
+        }
+    }
+
+    // 일시정지
     public void PauseGame()
     {
         if (isPaused)
@@ -32,11 +58,13 @@ public class PauseUI : MonoBehaviour
         isPaused = true;
 
         UpdateScoreUI();
+
         SetPausePanel(true);
 
         Time.timeScale = 0f;
     }
 
+    // 게임 재개
     public void ResumeGame()
     {
         if (!isPaused)
@@ -51,6 +79,7 @@ public class PauseUI : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    // 게임 재시작
     public void RestartGame()
     {
         Time.timeScale = 1f;
@@ -60,6 +89,7 @@ public class PauseUI : MonoBehaviour
         );
     }
 
+    // 타이틀로 이동
     public void GoToTitle()
     {
         Time.timeScale = 1f;
@@ -67,6 +97,7 @@ public class PauseUI : MonoBehaviour
         SceneManager.LoadScene(titleSceneName);
     }
 
+    // 점수 UI 업데이트
     private void UpdateScoreUI()
     {
         if (ScoreManager.Instance == null)
@@ -93,6 +124,7 @@ public class PauseUI : MonoBehaviour
         }
     }
 
+    // 일시정지 패널 표시 / 숨김
     private void SetPausePanel(bool active)
     {
         if (pausePanel != null)

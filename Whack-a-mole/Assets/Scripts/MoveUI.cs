@@ -33,6 +33,12 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
     private bool isActive;
     private bool isHit;
 
+    // 현재 두더지를 생성한 Spawner
+    private MoleSpawnerUI spawner;
+
+    // 현재 두더지가 생성된 홀
+    private RectTransform currentHole;
+
     private void Awake()
     {
         if (animator == null)
@@ -44,6 +50,16 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
         {
             moleImage = GetComponent<Image>();
         }
+    }
+
+    // Spawner와 홀 정보 연결
+    public void Initialize(
+        MoleSpawnerUI moleSpawner,
+        RectTransform hole
+    )
+    {
+        spawner = moleSpawner;
+        currentHole = hole;
     }
 
     // 두더지 등장
@@ -90,7 +106,6 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
             }
         }
 
-        // 내려가는 애니메이션
         if (animator != null)
         {
             animator.Play(
@@ -119,7 +134,7 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
             return;
         }
 
-        // 이미 클릭했다면 중복 처리 방지
+        // 이미 클릭했다면 무시
         if (isHit)
         {
             return;
@@ -133,7 +148,7 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
         // =========================
         if (isBadMole)
         {
-            // 배드 두더지를 클릭하면 콤보 초기화
+            // 콤보 초기화
             if (ComboManager.Instance != null)
             {
                 ComboManager.Instance.RegisterBadHit();
@@ -161,7 +176,7 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
             // 기본 배율
             int multiplier = 1;
 
-            // 현재 콤보 배율 가져오기
+            // 현재 배율 가져오기
             if (ComboManager.Instance != null)
             {
                 multiplier =
@@ -180,8 +195,18 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
             }
         }
 
-        // 클릭 후 처리
-        StartCoroutine(HitRoutine());
+        // 홀 사용 해제
+        if (spawner != null)
+        {
+            spawner.OnMoleDestroyed(
+                currentHole
+            );
+        }
+
+        // 클릭 처리
+        StartCoroutine(
+            HitRoutine()
+        );
     }
 
     // 클릭된 두더지 처리
@@ -197,8 +222,11 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
         if (hitSprite != null &&
             moleImage != null)
         {
-            moleImage.sprite = hitSprite;
-            moleImage.enabled = true;
+            moleImage.sprite =
+                hitSprite;
+
+            moleImage.enabled =
+                true;
         }
 
         // 클릭된 모습 유지
@@ -210,19 +238,19 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
         Destroy(gameObject);
     }
 
-    // 현재 두더지가 활성 상태인지 확인
+    // 현재 두더지 활성 상태
     public bool IsActive()
     {
         return isActive;
     }
 
-    // 현재 두더지가 클릭됐는지 확인
+    // 현재 두더지가 클릭됐는지
     public bool IsHit()
     {
         return isHit;
     }
 
-    // 배드 두더지인지 확인
+    // 배드 두더지인지
     public bool IsBadMole()
     {
         return isBadMole;
