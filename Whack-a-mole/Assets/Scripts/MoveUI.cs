@@ -15,10 +15,6 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
     [SerializeField] private string upAnimationName = "Mole_Up";
     [SerializeField] private string downAnimationName = "Mole_Down";
 
-    [Header("Timing")]
-    [SerializeField] private float stayTime = 1.0f;
-    [SerializeField] private float downAnimationTime = 0.5f;
-
     [Header("Hit")]
     [SerializeField] private Sprite hitSprite;
 
@@ -73,10 +69,10 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    // 두더지 내려가기
+    // 두더지가 내려감
     public void HideMole()
     {
-        // 이미 클릭된 두더지는 무시
+        // 이미 클릭한 두더지는 무시
         if (isHit)
         {
             return;
@@ -84,6 +80,17 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
 
         isActive = false;
 
+        // 일반 / 특수 두더지를 놓치면 콤보 초기화
+        // 배드 두더지를 놓치는 것은 괜찮음
+        if (!isBadMole)
+        {
+            if (ComboManager.Instance != null)
+            {
+                ComboManager.Instance.ResetCombo();
+            }
+        }
+
+        // 내려가는 애니메이션
         if (animator != null)
         {
             animator.Play(
@@ -92,9 +99,6 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
                 0f
             );
         }
-
-        // 놓친 두더지는 아무 처리도 하지 않음
-        // 일반 / 특수 / 배드 모두 콤보 유지
     }
 
     // 두더지 클릭
@@ -109,7 +113,7 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
             return;
         }
 
-        // 올라와 있지 않으면 클릭 무시
+        // 두더지가 올라와 있지 않으면 무시
         if (!isActive)
         {
             return;
@@ -129,7 +133,7 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
         // =========================
         if (isBadMole)
         {
-            // 배드 두더지를 잡으면 콤보 초기화
+            // 배드 두더지를 클릭하면 콤보 초기화
             if (ComboManager.Instance != null)
             {
                 ComboManager.Instance.RegisterBadHit();
@@ -180,7 +184,7 @@ public class MoveUI : MonoBehaviour, IPointerClickHandler
         StartCoroutine(HitRoutine());
     }
 
-    // 클릭 후 처리
+    // 클릭된 두더지 처리
     private IEnumerator HitRoutine()
     {
         // 애니메이션 정지

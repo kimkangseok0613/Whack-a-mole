@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager Instance { get; private set; }
 
     [Header("Result Panel")]
     [SerializeField] private GameObject resultPanel;
@@ -11,21 +11,23 @@ public class GameManager : MonoBehaviour
     [Header("Result UI")]
     [SerializeField] private ResultUI resultUI;
 
+    [Header("Scenes")]
+    [SerializeField] private string titleSceneName = "Title";
+
     private bool isGameOver;
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
+        Instance = this;
+
         Time.timeScale = 1f;
+        isGameOver = false;
 
         if (resultPanel != null)
         {
@@ -42,19 +44,16 @@ public class GameManager : MonoBehaviour
 
         isGameOver = true;
 
-        // 결과 패널 표시
-        if (resultPanel != null)
-        {
-            resultPanel.SetActive(true);
-        }
-
-        // 현재 점수 저장 및 결과 표시
         if (resultUI != null)
         {
             resultUI.ShowResult();
         }
 
-        // 게임 일시정지
+        if (resultPanel != null)
+        {
+            resultPanel.SetActive(true);
+        }
+
         Time.timeScale = 0f;
     }
 
@@ -71,7 +70,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
 
-        SceneManager.LoadScene("Title");
+        SceneManager.LoadScene(titleSceneName);
     }
 
     public bool IsGameOver()

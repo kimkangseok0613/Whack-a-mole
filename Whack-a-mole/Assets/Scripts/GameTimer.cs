@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GameTimer : MonoBehaviour
 {
-    public static GameTimer Instance;
+    public static GameTimer Instance { get; private set; }
 
     [Header("Timer")]
     [SerializeField] private float gameTime = 60f;
@@ -16,15 +16,13 @@ public class GameTimer : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
+
+        Instance = this;
     }
 
     private void Start()
@@ -47,10 +45,11 @@ public class GameTimer : MonoBehaviour
         if (currentTime <= 0f)
         {
             currentTime = 0f;
+            isGameOver = true;
 
             UpdateTimerUI();
+            TriggerGameOver();
 
-            GameOver();
             return;
         }
 
@@ -66,11 +65,8 @@ public class GameTimer : MonoBehaviour
         }
     }
 
-    private void GameOver()
+    private void TriggerGameOver()
     {
-        isGameOver = true;
-
-        // 게임 결과 처리
         if (GameManager.Instance != null)
         {
             GameManager.Instance.GameOver();

@@ -14,7 +14,7 @@ public class MoleSpawnerUI : MonoBehaviour
 
     [Header("Spawn Settings")]
     [SerializeField] private int moleCount = 1;
-    [SerializeField] private float stayTime = 1.0f;
+    [SerializeField] private float stayTime = 1f;
     [SerializeField] private float downAnimationTime = 0.5f;
     [SerializeField] private float spawnDelay = 0.7f;
 
@@ -35,79 +35,30 @@ public class MoleSpawnerUI : MonoBehaviour
 
     private IEnumerator SpawnRoutine()
     {
-        while (true)
+        while (!IsGameOver())
         {
-            // 게임 종료 후에는 더 이상 두더지를 생성하지 않음
-            if (GameManager.Instance != null &&
-                GameManager.Instance.IsGameOver())
+            List<GameObject> spawnedMoles = SpawnMoles();
+
+            yield return new WaitForSeconds(stayTime);
+
+            if (IsGameOver())
             {
                 yield break;
             }
 
-            Debug.Log("두더지 생성 시작");
+            HideMoles(spawnedMoles);
 
-            // 두더지 생성
-            List<GameObject> spawnedMoles =
-                SpawnMoles();
+            yield return new WaitForSeconds(downAnimationTime);
 
-            // 두더지가 올라와 있는 시간
-            yield return new WaitForSeconds(
-                stayTime
-            );
+            DestroyMoles(spawnedMoles);
 
-            // 게임 종료 확인
-            if (GameManager.Instance != null &&
-                GameManager.Instance.IsGameOver())
-            {
-                yield break;
-            }
-
-            Debug.Log("두더지 내려가기");
-
-            // 두더지 내려가기
-            for (int i = 0; i < spawnedMoles.Count; i++)
-            {
-                if (spawnedMoles[i] == null)
-                {
-                    continue;
-                }
-
-                MoveUI moveUI =
-                    spawnedMoles[i].GetComponent<MoveUI>();
-
-                if (moveUI != null)
-                {
-                    moveUI.HideMole();
-                }
-            }
-
-            // 내려가는 애니메이션 대기
-            yield return new WaitForSeconds(
-                downAnimationTime
-            );
-
-            // 남아있는 두더지 삭제
-            for (int i = 0; i < spawnedMoles.Count; i++)
-            {
-                if (spawnedMoles[i] != null)
-                {
-                    Destroy(spawnedMoles[i]);
-                }
-            }
-
-            Debug.Log("두더지 삭제 완료");
-
-            // 다음 두더지 생성까지 대기
-            yield return new WaitForSeconds(
-                spawnDelay
-            );
+            yield return new WaitForSeconds(spawnDelay);
         }
     }
 
     private List<GameObject> SpawnMoles()
     {
-        List<GameObject> spawnedMoles =
-            new List<GameObject>();
+        List<GameObject> spawnedMoles = new List<GameObject>();
 
         if (holes == null || holes.Length == 0)
         {
@@ -118,97 +69,138 @@ public class MoleSpawnerUI : MonoBehaviour
             return spawnedMoles;
         }
 
-        // 사용할 수 있는 구멍 목록
         List<RectTransform> availableHoles =
-            new List<RectTransform>();
+            GetAvailableHoles();
 
-        for (int i = 0; i < holes.Length; i++)
+        int spawnCount =
+            Mathf.Min(moleCount, availableHoles.Count);
+
+        for (int i = 0; i < spawnCount; i++)
         {
-            if (holes[i] != null)
-            {
-                availableHoles.Add(holes[i]);
-            }
-        }
+            RectTransform hole =
+                GetRandomHole(availableHoles);
 
-        // 생성할 두더지 수
-        int count = Mathf.Min(
-            moleCount,
-            availableHoles.Count
-        );
-
-        for (int i = 0; i < count; i++)
-        {
-            // 랜덤 구멍 선택
-            int randomIndex =
-                Random.Range(
-                    0,
-                    availableHoles.Count
-                );
-
-            RectTransform selectedHole =
-                availableHoles[randomIndex];
-
-            // 같은 구멍 중복 방지
-            availableHoles.RemoveAt(
-                randomIndex
-            );
-
-            // 두더지 종류 랜덤 선택
-            GameObject selectedPrefab =
+            GameObject prefab =
                 GetRandomMolePrefab();
 
-            if (selectedPrefab == null)
+            if (hole == null || prefab == null)
             {
-                Debug.LogError(
-                    "MoleSpawnerUI: 두더지 프리팹이 연결되지 않았습니다."
-                );
-
                 continue;
             }
 
-            // 두더지 생성
             GameObject mole =
-                Instantiate(
-                    selectedPrefab,
-                    selectedHole
-                );
+                CreateMole(prefab, hole);
 
-            // UI 위치 초기화
-            RectTransform moleRect =
-                mole.GetComponent<RectTransform>();
-
-            if (moleRect != null)
+            if (mole != null)
             {
-                moleRect.anchoredPosition =
-                    Vector2.zero;
+                spawnedMoles.Add(mole);
+            }
+        }
 
-                moleRect.localRotation =
-                    Quaternion.identity;
+        return spawnedMoles;
+    }
 
-                moleRect.localScale =
-                    Vector3.one;
+    private List<RectTransform> GetAvailableHoles()
+    {
+        List<RectTransform> availableHoles =
+            new List<RectTransform>();
+
+        foreach (RectTransform hole in holes)
+        {
+            if (hole != null)
+            {
+                availableHoles.Add(hole);
+            }
+        }
+
+        return availableHoles;
+    }
+
+    private RectTransform GetRandomHole(
+        List<RectTransform> availableHoles)
+    {
+        if (availableHoles.Count == 0)
+        {
+            return null;
+        }
+
+        int index =
+            Random.Range(0, availableHoles.Count);
+
+        RectTransform selectedHole =
+            availableHoles[index];
+
+        availableHoles.RemoveAt(index);
+
+        return selectedHole;
+    }
+
+    private GameObject CreateMole(
+        GameObject prefab,
+        RectTransform hole)
+    {
+        GameObject mole =
+            Instantiate(prefab, hole);
+
+        RectTransform moleRect =
+            mole.GetComponent<RectTransform>();
+
+        if (moleRect != null)
+        {
+            moleRect.anchoredPosition = Vector2.zero;
+            moleRect.localRotation = Quaternion.identity;
+            moleRect.localScale = Vector3.one;
+        }
+
+        MoveUI moveUI =
+            mole.GetComponent<MoveUI>();
+
+        if (moveUI == null)
+        {
+            Debug.LogError(
+                mole.name +
+                "에 MoveUI가 없습니다."
+            );
+
+            Destroy(mole);
+            return null;
+        }
+
+        moveUI.ShowMole();
+
+        return mole;
+    }
+
+    private void HideMoles(
+        List<GameObject> spawnedMoles)
+    {
+        foreach (GameObject mole in spawnedMoles)
+        {
+            if (mole == null)
+            {
+                continue;
             }
 
-            // MoveUI 가져오기
             MoveUI moveUI =
                 mole.GetComponent<MoveUI>();
 
             if (moveUI != null)
             {
-                moveUI.ShowMole();
+                moveUI.HideMole();
             }
-            else
-            {
-                Debug.LogError(
-                    mole.name +
-                    "에 MoveUI가 없습니다."
-                );
-            }
-
-            spawnedMoles.Add(mole);
         }
+    }
 
-        return spawnedMoles;
+    private void DestroyMoles(
+        List<GameObject> spawnedMoles)
+    {
+        foreach (GameObject mole in spawnedMoles)
+        {
+            if (mole != null)
+            {
+                Destroy(mole);
+            }
+        }
     }
 
     private GameObject GetRandomMolePrefab()
@@ -228,12 +220,8 @@ public class MoleSpawnerUI : MonoBehaviour
         }
 
         float randomValue =
-            Random.Range(
-                0f,
-                totalChance
-            );
+            Random.Range(0f, totalChance);
 
-        // 일반 두더지
         if (randomValue < normalChance)
         {
             return normalMolePrefab;
@@ -241,13 +229,17 @@ public class MoleSpawnerUI : MonoBehaviour
 
         randomValue -= normalChance;
 
-        // 특수 두더지
         if (randomValue < specialChance)
         {
             return specialMolePrefab;
         }
 
-        // 배드 두더지
         return badMolePrefab;
+    }
+
+    private bool IsGameOver()
+    {
+        return GameManager.Instance != null &&
+               GameManager.Instance.IsGameOver();
     }
 }

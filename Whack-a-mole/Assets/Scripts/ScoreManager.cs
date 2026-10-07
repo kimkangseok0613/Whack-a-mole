@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    public static ScoreManager Instance;
+    public static ScoreManager Instance { get; private set; }
 
     public enum GameMode
     {
@@ -25,37 +25,25 @@ public class ScoreManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        score = 0;
+        Instance = this;
 
+        score = 0;
         UpdateScoreUI();
     }
 
     public void AddScore(int amount)
     {
         score += amount;
-
-        // 점수가 0보다 작아지지 않도록 설정
         score = Mathf.Max(0, score);
 
+        SaveHighScore();
         UpdateScoreUI();
-    }
-
-    private void UpdateScoreUI()
-    {
-        if (scoreText != null)
-        {
-            scoreText.text = "점수 : " + score;
-        }
     }
 
     public int GetScore()
@@ -63,40 +51,44 @@ public class ScoreManager : MonoBehaviour
         return score;
     }
 
-    public void ResetScore()
-    {
-        score = 0;
-
-        UpdateScoreUI();
-    }
-
     public int GetHighScore()
     {
-        string key = GetHighScoreKey();
-
-        return PlayerPrefs.GetInt(key, 0);
+        return PlayerPrefs.GetInt(GetHighScoreKey(), 0);
     }
 
     public void SaveHighScore()
     {
-        string key = GetHighScoreKey();
+        int currentHighScore = GetHighScore();
 
-        int highScore = PlayerPrefs.GetInt(key, 0);
-
-        if (score > highScore)
+        if (score <= currentHighScore)
         {
-            PlayerPrefs.SetInt(key, score);
-            PlayerPrefs.Save();
+            return;
         }
+
+        PlayerPrefs.SetInt(GetHighScoreKey(), score);
+        PlayerPrefs.Save();
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
+        UpdateScoreUI();
+    }
+
+    private void UpdateScoreUI()
+    {
+        if (scoreText == null)
+        {
+            return;
+        }
+
+        scoreText.text = "점수 : " + score;
     }
 
     private string GetHighScoreKey()
     {
-        if (gameMode == GameMode.Normal)
-        {
-            return NormalHighScoreKey;
-        }
-
-        return HardHighScoreKey;
+        return gameMode == GameMode.Normal
+            ? NormalHighScoreKey
+            : HardHighScoreKey;
     }
 }

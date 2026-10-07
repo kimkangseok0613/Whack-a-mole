@@ -3,59 +3,62 @@ using UnityEngine.SceneManagement;
 
 public class DifficultyManager : MonoBehaviour
 {
-    public static DifficultyManager Instance;
+    public static DifficultyManager Instance { get; private set; }
 
     [Header("Difficulty Panel")]
     [SerializeField] private GameObject difficultyPanel;
 
+    [Header("Scene Names")]
+    [SerializeField] private string normalSceneName = "Normal";
+    [SerializeField] private string hardSceneName = "Hard";
+
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
+
+        Instance = this;
     }
 
     private void Start()
     {
-        if (difficultyPanel != null)
-        {
-            difficultyPanel.SetActive(false);
-        }
+        CloseDifficultyPanel();
     }
 
-    // 난이도 선택창 열기
     public void OpenDifficultyPanel()
     {
-        if (difficultyPanel != null)
-        {
-            difficultyPanel.SetActive(true);
-        }
+        SetDifficultyPanel(true);
     }
 
-    // 난이도 선택창 닫기
     public void CloseDifficultyPanel()
     {
+        SetDifficultyPanel(false);
+    }
+
+    public void SelectNormal()
+    {
+        LoadScene(normalSceneName);
+    }
+
+    public void SelectHard()
+    {
+        LoadScene(hardSceneName);
+    }
+
+    private void SetDifficultyPanel(bool active)
+    {
         if (difficultyPanel != null)
         {
-            difficultyPanel.SetActive(false);
+            difficultyPanel.SetActive(active);
         }
     }
 
-    // Normal 선택
-    public void SelectNormal()
+    private void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene("Normal");
-    }
-
-    // Hard 선택
-    public void SelectHard()
-    {
-        SceneManager.LoadScene("Hard");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneName);
     }
 }

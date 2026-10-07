@@ -11,34 +11,28 @@ public class PauseUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI highScoreText;
 
-    [Header("Title Scene")]
+    [Header("Scene")]
     [SerializeField] private string titleSceneName = "Title";
 
-    private bool isPaused = false;
+    private bool isPaused;
 
-    private void Start()
+    private void Awake()
     {
-        if (pausePanel != null)
-        {
-            pausePanel.SetActive(false);
-        }
-
         Time.timeScale = 1f;
+        SetPausePanel(false);
     }
 
     public void PauseGame()
     {
         if (isPaused)
+        {
             return;
+        }
 
         isPaused = true;
 
         UpdateScoreUI();
-
-        if (pausePanel != null)
-        {
-            pausePanel.SetActive(true);
-        }
+        SetPausePanel(true);
 
         Time.timeScale = 0f;
     }
@@ -46,14 +40,13 @@ public class PauseUI : MonoBehaviour
     public void ResumeGame()
     {
         if (!isPaused)
+        {
             return;
+        }
 
         isPaused = false;
 
-        if (pausePanel != null)
-        {
-            pausePanel.SetActive(false);
-        }
+        SetPausePanel(false);
 
         Time.timeScale = 1f;
     }
@@ -62,8 +55,9 @@ public class PauseUI : MonoBehaviour
     {
         Time.timeScale = 1f;
 
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        SceneManager.LoadScene(
+            SceneManager.GetActiveScene().name
+        );
     }
 
     public void GoToTitle()
@@ -76,19 +70,34 @@ public class PauseUI : MonoBehaviour
     private void UpdateScoreUI()
     {
         if (ScoreManager.Instance == null)
+        {
             return;
+        }
 
-        int currentScore = ScoreManager.Instance.GetScore();
-        int highScore = ScoreManager.Instance.GetHighScore();
+        int currentScore =
+            ScoreManager.Instance.GetScore();
+
+        int highScore =
+            ScoreManager.Instance.GetHighScore();
 
         if (scoreText != null)
         {
-            scoreText.text = "현재 점수 : " + currentScore;
+            scoreText.text =
+                "현재 점수 : " + currentScore;
         }
 
         if (highScoreText != null)
         {
-            highScoreText.text = "최고 점수 : " + highScore;
+            highScoreText.text =
+                "최고 점수 : " + highScore;
+        }
+    }
+
+    private void SetPausePanel(bool active)
+    {
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(active);
         }
     }
 }

@@ -477,7 +477,6 @@
 "Assets/Scripts/MoveUI.cs"
 "Assets/Scripts/PauseUI.cs"
 "Assets/Scripts/ResultUI.cs"
-"Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/ScoreManager.cs"
 -langversion:9.0
 /deterministic
