@@ -7,44 +7,29 @@ public class ResultUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI highScoreText;
 
-    private const string HighScoreKey = "HighScore";
-
     public void ShowResult()
     {
-        int currentScore = 0;
-
-        if (ScoreManager.Instance != null)
+        if (ScoreManager.Instance == null)
         {
-            currentScore =
-                ScoreManager.Instance.GetScore();
+            return;
         }
 
-        int highScore =
-            PlayerPrefs.GetInt(HighScoreKey, 0);
+        int currentScore = ScoreManager.Instance.GetScore();
 
-        // 최고 점수 갱신
-        if (currentScore > highScore)
-        {
-            highScore = currentScore;
+        // 현재 게임 모드의 최고 점수 저장
+        ScoreManager.Instance.SaveHighScore();
 
-            PlayerPrefs.SetInt(
-                HighScoreKey,
-                highScore
-            );
-
-            PlayerPrefs.Save();
-        }
+        // 현재 게임 모드의 최고 점수 가져오기
+        int highScore = ScoreManager.Instance.GetHighScore();
 
         if (scoreText != null)
         {
-            scoreText.text =
-                "SCORE : " + currentScore;
+            scoreText.text = "점수 : " + currentScore;
         }
 
         if (highScoreText != null)
         {
-            highScoreText.text =
-                "HIGH SCORE : " + highScore;
+            highScoreText.text = "최고 점수 : " + highScore;
         }
     }
 }

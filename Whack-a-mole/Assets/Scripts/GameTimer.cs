@@ -62,7 +62,7 @@ public class GameTimer : MonoBehaviour
         if (timerText != null)
         {
             timerText.text =
-                "TIME : " + Mathf.CeilToInt(currentTime);
+                "½Ã°£ : " + Mathf.CeilToInt(currentTime);
         }
     }
 

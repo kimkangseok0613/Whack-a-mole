@@ -1,33 +1,358 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/admin/Desktop/Whack-a-mole/Packages/manifest.json
+    m_FilePath: C:/Users/admin/Desktop/Whack-a-mole/Whack-a-mole/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639268552438054710
-    m_Hash: 3342785974
+      ticks: 639269331540202072
+    m_Hash: 1031423449
   m_LockFileStatus:
-    m_FilePath: C:/Users/admin/Desktop/Whack-a-mole/Packages/packages-lock.json
+    m_FilePath: C:/Users/admin/Desktop/Whack-a-mole/Whack-a-mole/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639268552438074789
-    m_Hash: 1800198582
+      ticks: 639269331579230351
+    m_Hash: 4190922080
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: C:/Users/admin/Desktop/Whack-a-mole/Packages
+m_ProjectPath: C:/Users/admin/Desktop/Whack-a-mole/Whack-a-mole/Packages
 m_EditorVersion: 6000.3.19f1 (7689f4515d75)
 m_ResolvedPackages:
+- packageId: com.unity.2d.animation@13.0.5
+  testable: 0
+  isDirectDependency: 1
+  version: 13.0.5
+  source: 1
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.2d.animation@5d1ab6c077e2
+  assetPath: Packages/com.unity.2d.animation
+  name: com.unity.2d.animation
+  displayName: 2D Animation
+  author:
+    name: 
+    email: 
+    url: 
+  category: 2D
+  type: 
+  description: 2D Animation provides all the necessary tooling and runtime components
+    for skeletal animation using Sprites.
+  errors: []
+  versions:
+    all:
+    - 1.0.15-preview.1
+    - 1.0.15-preview.2
+    - 1.0.15-preview.3
+    - 1.0.15-preview.4
+    - 1.0.15-preview.5
+    - 1.0.16-preview
+    - 1.0.16-preview.1
+    - 1.0.16-preview.2
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0-preview.3
+    - 2.1.0-preview.1
+    - 2.1.0-preview.2
+    - 2.1.0-preview.4
+    - 2.1.0-preview.5
+    - 2.1.0-preview.7
+    - 2.2.0-preview.1
+    - 2.2.0-preview.4
+    - 2.2.0-preview.5
+    - 2.2.1-preview.1
+    - 2.2.1-preview.2
+    - 3.0.2
+    - 3.0.3
+    - 3.0.4
+    - 3.0.5
+    - 3.0.6
+    - 3.0.8
+    - 3.1.0
+    - 3.1.1
+    - 3.2.1
+    - 3.2.2
+    - 3.2.3
+    - 3.2.4
+    - 3.2.5
+    - 3.2.6
+    - 3.2.9
+    - 3.2.10
+    - 3.2.11
+    - 3.2.13
+    - 3.2.14
+    - 3.2.15
+    - 3.2.16
+    - 3.2.17
+    - 3.2.18
+    - 4.0.0
+    - 4.0.1
+    - 4.1.0
+    - 4.1.1
+    - 4.2.1
+    - 4.2.2
+    - 4.2.3
+    - 4.2.4
+    - 4.2.5
+    - 4.2.6
+    - 4.2.8
+    - 5.0.0
+    - 5.0.1
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+    - 5.0.5
+    - 5.0.6
+    - 5.0.7
+    - 5.0.8
+    - 5.0.9
+    - 5.0.10
+    - 5.1.0
+    - 5.1.1
+    - 5.2.0
+    - 5.2.1
+    - 5.2.3
+    - 5.2.4
+    - 5.2.6
+    - 5.2.7
+    - 6.0.0-pre.1
+    - 6.0.0-pre.2
+    - 6.0.1
+    - 6.0.3
+    - 6.0.4
+    - 6.0.5
+    - 6.0.7
+    - 7.0.0-pre.2
+    - 7.0.0-pre.3
+    - 7.0.0
+    - 7.0.1
+    - 7.0.2
+    - 7.0.3
+    - 7.0.4
+    - 7.0.5
+    - 7.0.6
+    - 7.0.7
+    - 7.0.8
+    - 7.0.9
+    - 7.0.10
+    - 7.0.11
+    - 7.0.12
+    - 7.0.13
+    - 7.1.0
+    - 7.1.1
+    - 7.1.2
+    - 7.2.0
+    - 8.0.0-pre.3
+    - 8.0.0-pre.4
+    - 8.0.0
+    - 8.0.1
+    - 8.0.2
+    - 8.0.3
+    - 8.0.4
+    - 8.0.5
+    - 9.0.0-pre.1
+    - 9.0.0-pre.3
+    - 9.0.0
+    - 9.0.1
+    - 9.0.2
+    - 9.0.3
+    - 9.0.4
+    - 9.1.0
+    - 9.1.1
+    - 9.1.2
+    - 9.1.3
+    - 9.2.0
+    - 9.2.1
+    - 9.2.2
+    - 10.0.0-pre.1
+    - 10.0.0-pre.2
+    - 10.0.0
+    - 10.0.1
+    - 10.0.2
+    - 10.0.3
+    - 10.1.0
+    - 10.1.1
+    - 10.1.2
+    - 10.1.3
+    - 10.1.4
+    - 10.2.0
+    - 10.2.1
+    - 10.2.2
+    - 10.2.3
+    - 11.0.0
+    - 12.0.0
+    - 12.0.1
+    - 12.0.2
+    - 12.0.3
+    - 13.0.0
+    - 13.0.1
+    - 13.0.2
+    - 13.0.3
+    - 13.0.4
+    - 13.0.5
+    - 13.0.6
+    - 14.0.0
+    - 14.0.1
+    - 14.0.2
+    - 14.0.3
+    - 14.0.4
+    - 15.0.0
+    - 15.0.1
+    - 15.0.2
+    - 15.0.3
+    - 15.1.0
+    - 16.0.0
+    - 16.0.1
+    - 17.0.0
+    - 17.0.1
+    compatible:
+    - 13.0.5
+    - 13.0.6
+    recommended: 13.0.6
+    deprecated: []
+  dependencies:
+  - name: com.unity.2d.common
+    version: 12.0.3
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.collections
+    version: 2.4.3
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.2d.common
+    version: 12.0.3
+  - name: com.unity.burst
+    version: 1.8.29
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.collections
+    version: 2.6.6
+  - name: com.unity.test-framework
+    version: 1.6.0
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework.performance
+    version: 3.5.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  keywords:
+  - 2d
+  - animation
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639136608614960000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.animation@13.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/2d.git
+    revision: 1c0d005509ddec9deb2799abc968db66924c087e
+    path: 
+  unityLifecycle:
+    version: 13.0.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n- Fix label selection reset when clearing
+    filter in Sprite Library Editor. (UUM-133437)\n- Fix the ? button in the IKManager2D
+    inspector points to an Invalid link. (UUM-131299)\n- Fix the issue that the internal
+    class CullingManager is available in AddComponent. (UUM-131877)\n- Fix the missing
+    documentation link of CCD Solver 2D Component. (UUM-131875)\n- Fix the missing
+    documentation link of Fabrik Solver 2D Component. (UUM-131879)\n- Fix the missing
+    documentation link of Limb Solver 2D Component. (UUM-131891)\n- Uses readable
+    \"Sprite Renderer\" in the help box of Sprite Skin. (UUM-131888)\n- Do not show
+    Sprite Library Editor''s save confirmation when applying from the Inspector;
+    Editor is reset from disk like when selection changes. (DANB-1090)\n- Fix \"Save
+    Changes Failed - Index was out of range\" when closing a tab with Discard in
+    Sprite Library Editor while labels were selected in Grid view. (UUM-134472)\n-
+    Fix UI layout in 2D Animation Asset Upgrader when the window is docked. (UUM-134464)\n-
+    Fix sprite bones deformed when enabling/disabling GameObjects in the Player by
+    running RemoveTransformsIfNull after RemoveTransformsByIds so cached transform
+    indices stay valid. (UUM-134629)\n- Fix draw call fluctuation and sprite flicker
+    by avoiding AABB reset for culled Sprite Skins; deformable buffer release is
+    now handled by the batch API. (UUM-132924)\n- Align foldout name and triangle
+    in the Category tab in the Sprite Library Editor. (UUM-134471)\n- Fix \"To start
+    creating categories..\" text overlapping Categories title and + button when Sprite
+    Library Editor is docked and resized. (UUM-134468)\n- Fix Sprite Swap overlay
+    text overlapping buttons when docked in dynamic panel and resized. (UUM-130909)\n-
+    Fix Sprite Resolver component shows built-in Sprite Asset icon instead of the
+    actual Sprite. (UUM-132705)\n- Fix Skinning Editor right-overlay layout after
+    Editor BaseField / label metric changes: content-sized `PopupWindow` form rows
+    and panel heights instead of fixed `max-height` / pixel heights. (UUM-138628)\n\n###
+    Changed\n- Align online documentation URLs: package docs to @13.0; Unity Manual/Script
+    Reference links to Unity 6000.3."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 5d1ab6c077e280b8e48244a02bc9cd8d7af63d42
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 13.0.5
+    minimumUnityVersion: 6000.3.0a2
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.2d.sprite@d8bb22511404
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.2d.sprite@d8bb22511404
   assetPath: Packages/com.unity.2d.sprite
   name: com.unity.2d.sprite
   displayName: 2D Sprite
@@ -113,12 +438,260 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.2d.spriteshape@13.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 13.0.0
+  source: 1
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.2d.spriteshape@0738bab11647
+  assetPath: Packages/com.unity.2d.spriteshape
+  name: com.unity.2d.spriteshape
+  displayName: 2D SpriteShape
+  author:
+    name: 
+    email: 
+    url: 
+  category: 2D
+  type: 
+  description: SpriteShape Runtime & Editor Package contains the tooling and the
+    runtime component that allows you to create very organic looking spline based
+    2D worlds. It comes with intuitive configurator and a highly performant renderer.
+  errors: []
+  versions:
+    all:
+    - 1.0.10-preview.2
+    - 1.0.11-preview
+    - 1.0.12-preview
+    - 1.0.12-preview.1
+    - 1.0.14-preview.2
+    - 2.0.0-preview.4
+    - 2.0.0-preview.5
+    - 2.0.0-preview.7
+    - 2.0.0-preview.8
+    - 2.0.0-preview.9
+    - 2.1.0-preview.2
+    - 2.1.0-preview.6
+    - 2.1.0-preview.7
+    - 2.1.0-preview.10
+    - 2.1.0-preview.11
+    - 3.0.1
+    - 3.0.2
+    - 3.0.4
+    - 3.0.5
+    - 3.0.6
+    - 3.0.7
+    - 3.0.8
+    - 3.0.9
+    - 3.0.10
+    - 3.0.11
+    - 3.0.12
+    - 3.0.13
+    - 3.0.14
+    - 3.0.15
+    - 3.0.16
+    - 3.0.17
+    - 3.0.18
+    - 4.0.0
+    - 4.0.1
+    - 4.0.2
+    - 4.0.3
+    - 4.1.0
+    - 4.1.1
+    - 4.1.2
+    - 4.1.3
+    - 4.1.4
+    - 4.1.5
+    - 5.0.0
+    - 5.0.1
+    - 5.0.2
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
+    - 5.1.4
+    - 5.1.5
+    - 5.1.6
+    - 5.1.7
+    - 5.2.0
+    - 5.3.0
+    - 6.0.0-pre.1
+    - 6.0.0-pre.2
+    - 6.0.0
+    - 6.0.1
+    - 6.0.2
+    - 7.0.0-pre.2
+    - 7.0.0-pre.3
+    - 7.0.0
+    - 7.0.2
+    - 7.0.3
+    - 7.0.4
+    - 7.0.5
+    - 7.0.6
+    - 7.0.7
+    - 7.1.0
+    - 8.0.0-pre.4
+    - 8.0.0-pre.5
+    - 8.0.0
+    - 8.0.1
+    - 9.0.0-pre.1
+    - 9.0.0
+    - 9.0.1
+    - 9.0.2
+    - 9.0.3
+    - 9.0.4
+    - 9.0.5
+    - 9.1.0
+    - 9.1.1
+    - 10.0.0-pre.1
+    - 10.0.0-pre.2
+    - 10.0.0
+    - 10.0.1
+    - 10.0.2
+    - 10.0.3
+    - 10.0.4
+    - 10.0.5
+    - 10.0.6
+    - 10.0.7
+    - 10.1.0
+    - 10.1.1
+    - 11.0.0
+    - 12.0.0
+    - 12.0.1
+    - 12.0.2
+    - 13.0.0
+    - 14.0.0
+    - 14.0.1
+    - 15.0.0
+    - 15.0.1
+    - 15.0.2
+    - 15.0.3
+    - 16.0.0
+    - 17.0.0
+    compatible:
+    - 13.0.0
+    recommended: 13.0.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.2d.common
+    version: 12.0.0
+  - name: com.unity.mathematics
+    version: 1.1.0
+  - name: com.unity.modules.physics2d
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.2d.common
+    version: 12.0.3
+  - name: com.unity.burst
+    version: 1.8.29
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.collections
+    version: 2.6.6
+  - name: com.unity.test-framework
+    version: 1.6.0
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework.performance
+    version: 3.5.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  - name: com.unity.modules.physics2d
+    version: 1.0.0
+  keywords:
+  - 2d
+  - shape
+  - spriteshape
+  - smartsprite
+  - spline
+  - terrain2d
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638895774099940000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@13.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/2d.git
+    revision: 1ef60d478f22a420064f300ba7c3b3d6d3536dc3
+    path: 
+  unityLifecycle:
+    version: 13.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changed\n- Update minimum Unity version.\n- Updated
+    Spriteshape extras to use new InputSystem.\n\n### Fixed\n- UUM-108688 Fix Sprite
+    Shape Profile Asset icon which was low quality and blurry in Project window\n-
+    Use EditorUtility.EntityIdToObject instead of EditorUtility.InstanceIDToObject
+    which is deprecated. (DANB-1042)"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 0738bab116473980325be8cdb7c3c42ab6961778
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 13.0.0
+    minimumUnityVersion: 6000.3.0a2
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.ai.navigation@2.0.13
   testable: 0
   isDirectDependency: 1
   version: 2.0.13
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.ai.navigation@42d896194035
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.ai.navigation@42d896194035
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -260,7 +833,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.12.4
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Unity Version Control
@@ -484,7 +1057,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.40
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.ide.rider@e4950c6d131b
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.ide.rider@e4950c6d131b
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -630,7 +1203,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.26
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -761,7 +1334,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.19.0
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -949,7 +1522,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -1056,7 +1629,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.3.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.render-pipelines.universal@8a9b4021522a
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.render-pipelines.universal@8a9b4021522a
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal Render Pipeline
@@ -1192,7 +1765,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.6.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.test-framework@bd7f943e9647
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.test-framework@bd7f943e9647
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -1293,7 +1866,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.12
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.timeline@8cd8509afae5
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.timeline@8cd8509afae5
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1496,7 +2069,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.ugui@b95364aab964
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.ugui@b95364aab964
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: uGUI
@@ -1603,7 +2176,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.11
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.visualscripting@8bed5ad90189
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.visualscripting@8bed5ad90189
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1745,7 +2318,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.accessibility
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.accessibility
   assetPath: Packages/com.unity.modules.accessibility
   name: com.unity.modules.accessibility
   displayName: Accessibility
@@ -1833,7 +2406,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.adaptiveperformance
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.adaptiveperformance
   assetPath: Packages/com.unity.modules.adaptiveperformance
   name: com.unity.modules.adaptiveperformance
   displayName: Adaptive Performance
@@ -1927,7 +2500,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.ai
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.ai
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -2015,7 +2588,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.androidjni
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.androidjni
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -2102,7 +2675,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.animation
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.animation
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -2190,7 +2763,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.assetbundle
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.assetbundle
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -2278,7 +2851,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.audio
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.audio
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -2366,7 +2939,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.cloth
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.cloth
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -2458,7 +3031,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.director
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.director
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -2554,7 +3127,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.imageconversion
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.imageconversion
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -2642,7 +3215,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.imgui
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.imgui
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -2730,7 +3303,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.jsonserialize
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.jsonserialize
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -2818,7 +3391,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.particlesystem
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.particlesystem
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -2906,7 +3479,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.physics
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.physics
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -2994,7 +3567,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.physics2d
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.physics2d
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -3082,7 +3655,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.screencapture
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.screencapture
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -3174,7 +3747,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.terrain
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.terrain
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -3262,7 +3835,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.terrainphysics
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.terrainphysics
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -3358,7 +3931,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.tilemap
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.tilemap
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -3449,7 +4022,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.ui
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.ui
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -3537,7 +4110,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.uielements
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.uielements
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -3645,7 +4218,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.umbra
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.umbra
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -3733,7 +4306,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.unityanalytics
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.unityanalytics
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -3828,7 +4401,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.unitywebrequest
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.unitywebrequest
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -3916,7 +4489,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -4012,7 +4585,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.unitywebrequestaudio
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.unitywebrequestaudio
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -4108,7 +4681,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.unitywebrequesttexture
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.unitywebrequesttexture
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -4204,7 +4777,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.unitywebrequestwww
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.unitywebrequestwww
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -4316,7 +4889,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.vectorgraphics
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.vectorgraphics
   assetPath: Packages/com.unity.modules.vectorgraphics
   name: com.unity.modules.vectorgraphics
   displayName: Vector Graphics
@@ -4423,7 +4996,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.vehicles
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.vehicles
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -4515,7 +5088,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.video
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.video
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -4615,7 +5188,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.vr
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.vr
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -4718,7 +5291,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.wind
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.wind
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -4806,7 +5379,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.xr
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.xr
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -4906,7 +5479,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.subsystems
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.subsystems
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -4998,7 +5571,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.modules.hierarchycore
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.modules.hierarchycore
   assetPath: Packages/com.unity.modules.hierarchycore
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
@@ -5086,7 +5659,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.5
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.ext.nunit@d8c07649098d
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.ext.nunit@d8c07649098d
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -5177,7 +5750,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.3.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.render-pipelines.core@c3bbbae46ff1
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.render-pipelines.core@c3bbbae46ff1
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Scriptable Render Pipeline Core
@@ -5310,7 +5883,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.3.0
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.shadergraph@0a17040bdbb7
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.shadergraph@0a17040bdbb7
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -5435,7 +6008,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.3
   source: 2
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
   displayName: Universal Render Pipeline Config
@@ -5547,12 +6120,549 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.2d.common@12.0.3
+  testable: 0
+  isDirectDependency: 0
+  version: 12.0.3
+  source: 1
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.2d.common@2af7c9b44b5c
+  assetPath: Packages/com.unity.2d.common
+  name: com.unity.2d.common
+  displayName: 2D Common
+  author:
+    name: 
+    email: 
+    url: 
+  category: 2D
+  type: 
+  description: 2D Common is a package that contains shared functionalities that are
+    used by most of the other 2D packages.
+  errors: []
+  versions:
+    all:
+    - 1.0.9-preview.1
+    - 1.0.9-preview.2
+    - 1.0.10-preview
+    - 1.0.11-preview.1
+    - 1.1.0-preview.1
+    - 1.1.0-preview.2
+    - 1.2.0-preview.1
+    - 2.0.1
+    - 2.0.2
+    - 2.1.0
+    - 2.1.1
+    - 2.1.2
+    - 3.0.0
+    - 3.0.1
+    - 4.0.0
+    - 4.0.1
+    - 4.0.2
+    - 4.0.3
+    - 4.0.4
+    - 4.1.0
+    - 4.2.0
+    - 4.2.1
+    - 5.0.0-pre.1
+    - 5.0.0-pre.2
+    - 5.0.0
+    - 6.0.0-pre.2
+    - 6.0.0-pre.3
+    - 6.0.0-pre.4
+    - 6.0.0
+    - 6.0.1
+    - 6.0.2
+    - 6.0.3
+    - 6.0.4
+    - 6.0.5
+    - 6.0.6
+    - 6.0.7
+    - 6.0.8
+    - 6.1.0
+    - 7.0.0-pre.3
+    - 7.0.0-pre.4
+    - 7.0.0
+    - 7.0.1
+    - 7.0.2
+    - 7.0.3
+    - 8.0.0-pre.1
+    - 8.0.0-pre.2
+    - 8.0.0
+    - 8.0.1
+    - 8.0.2
+    - 8.0.3
+    - 8.0.4
+    - 8.1.0
+    - 8.1.1
+    - 9.0.0-pre.1
+    - 9.0.0-pre.2
+    - 9.0.0
+    - 9.0.1
+    - 9.0.2
+    - 9.0.3
+    - 9.0.4
+    - 9.0.5
+    - 9.0.6
+    - 9.0.7
+    - 9.1.0
+    - 9.1.1
+    - 9.1.2
+    - 10.0.0
+    - 11.0.0
+    - 11.0.1
+    - 12.0.0
+    - 12.0.1
+    - 12.0.2
+    - 12.0.3
+    - 12.0.4
+    - 13.0.0
+    - 13.0.1
+    - 13.0.2
+    - 14.0.0
+    - 14.0.1
+    - 15.0.0
+    - 16.0.0
+    compatible:
+    - 12.0.3
+    - 12.0.4
+    recommended: 12.0.4
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.4
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.collections
+    version: 2.4.3
+  - name: com.unity.mathematics
+    version: 1.1.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.29
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.collections
+    version: 2.6.6
+  - name: com.unity.test-framework
+    version: 1.6.0
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework.performance
+    version: 3.5.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  keywords:
+  - 2d
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639136608519590000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.common@12.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/2d.git
+    revision: 1c0d005509ddec9deb2799abc968db66924c087e
+    path: 
+  unityLifecycle:
+    version: 12.0.3
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n- Fix the issue where the Scene and Sprite
+    Editor views fail to update correctly when an edge is deleted to split geometry.
+    (UUM-134656)\n\n### Added\n- Allow retrieving Sprite Atlas asset GUID as SpriteID
+    can be duplicated."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 2af7c9b44b5c0734073acb3fd3efc0a050c7b62e
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 12.0.3
+    minimumUnityVersion: 6000.3.0a2
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.mathematics@1.3.3
+  testable: 0
+  isDirectDependency: 0
+  version: 1.3.3
+  source: 1
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.mathematics@19a9377c4ffa
+  assetPath: Packages/com.unity.mathematics
+  name: com.unity.mathematics
+  displayName: Mathematics
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Unity's C# SIMD math library providing vector types and math functions
+    with a shader like syntax.
+  errors: []
+  versions:
+    all:
+    - 0.0.12-preview.2
+    - 0.0.12-preview.5
+    - 0.0.12-preview.8
+    - 0.0.12-preview.10
+    - 0.0.12-preview.11
+    - 0.0.12-preview.13
+    - 0.0.12-preview.17
+    - 0.0.12-preview.19
+    - 0.0.12-preview.20
+    - 1.0.0-preview.1
+    - 1.0.1
+    - 1.1.0-preview.1
+    - 1.1.0
+    - 1.2.1
+    - 1.2.4
+    - 1.2.5
+    - 1.2.6
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    compatible:
+    - 1.3.3
+    recommended: 1.3.3
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638950052122000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.mathematics@1.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/Unity.Mathematics.git
+    revision: 1695a8503482a3131be78cc26308a93f82c05b04
+    path: 
+  unityLifecycle:
+    version: 1.3.3
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n* Fixed `math.hash` crash when using IL2CPP
+    builds on Arm 32 bit devices.\n* Fixed obsolete method usage warnings for `MatrixDrawer.CanCacheInspectorGUI`
+    and `PrimitiveVectorDrawer.CanCacheInspectorGUI` in UNITY_2023_2_OR_NEWER.\n*
+    Updated minimum editor version to 2021.3"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 19a9377c4ffa59370edad3e6a34e4445529badde
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.3.3
+    minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.collections@2.6.6
+  testable: 0
+  isDirectDependency: 0
+  version: 2.6.6
+  source: 1
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.collections@9796e5ee0d9e
+  assetPath: Packages/com.unity.collections
+  name: com.unity.collections
+  displayName: Collections
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: A C# collections library providing data structures that can be used
+    in jobs, and optimized by Burst compiler.
+  errors: []
+  versions:
+    all:
+    - 0.0.9-preview.1
+    - 0.0.9-preview.2
+    - 0.0.9-preview.3
+    - 0.0.9-preview.4
+    - 0.0.9-preview.5
+    - 0.0.9-preview.6
+    - 0.0.9-preview.7
+    - 0.0.9-preview.8
+    - 0.0.9-preview.9
+    - 0.0.9-preview.10
+    - 0.0.9-preview.11
+    - 0.0.9-preview.12
+    - 0.0.9-preview.13
+    - 0.0.9-preview.14
+    - 0.0.9-preview.15
+    - 0.0.9-preview.16
+    - 0.0.9-preview.17
+    - 0.0.9-preview.18
+    - 0.0.9-preview.19
+    - 0.0.9-preview.20
+    - 0.1.0-preview
+    - 0.1.1-preview
+    - 0.2.0-preview.13
+    - 0.3.0-preview.0
+    - 0.4.0-preview.6
+    - 0.5.0-preview.9
+    - 0.5.1-preview.11
+    - 0.5.2-preview.8
+    - 0.6.0-preview.9
+    - 0.7.0-preview.2
+    - 0.7.1-preview.3
+    - 0.8.0-preview.5
+    - 0.9.0-preview.5
+    - 0.9.0-preview.6
+    - 0.11.0-preview.17
+    - 0.12.0-preview.13
+    - 0.14.0-preview.16
+    - 0.15.0-preview.21
+    - 0.17.0-preview.18
+    - 1.0.0-pre.3
+    - 1.0.0-pre.5
+    - 1.0.0-pre.6
+    - 1.1.0
+    - 1.2.3-pre.1
+    - 1.2.3
+    - 1.2.4
+    - 1.3.1
+    - 1.4.0
+    - 1.5.1
+    - 1.5.2
+    - 2.1.0-exp.4
+    - 2.1.0-pre.2
+    - 2.1.0-pre.6
+    - 2.1.0-pre.11
+    - 2.1.0-pre.18
+    - 2.1.1
+    - 2.1.4
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0-exp.1
+    - 2.3.0-pre.3
+    - 2.4.0-exp.2
+    - 2.4.0-pre.2
+    - 2.4.0-pre.5
+    - 2.4.0
+    - 2.4.1
+    - 2.4.2
+    - 2.4.3
+    - 2.5.0-exp.1
+    - 2.5.0-pre.2
+    - 2.5.1
+    - 2.5.2
+    - 2.5.3
+    - 2.5.7
+    - 2.6.0-exp.2
+    - 2.6.0-pre.3
+    - 2.6.0-pre.4
+    - 2.6.2
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
+    - 2.6.6
+    - 2.6.7
+    - 2.6.8
+    - 2.7.1
+    compatible:
+    - 2.6.6
+    - 2.6.7
+    - 2.6.8
+    - 2.7.1
+    recommended: 2.6.8
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.28
+  - name: com.unity.mathematics
+    version: 1.3.2
+  - name: com.unity.test-framework
+    version: 1.4.6
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework.performance
+    version: 3.0.3
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.29
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.test-framework
+    version: 1.6.0
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework.performance
+    version: 3.5.0
+  keywords:
+  - dots
+  - collections
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639126363706650000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collections@2.6/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/dots.git
+    revision: 233b7df164f9829fad832775f3875c0379155347
+    path: 
+  unityLifecycle:
+    version: 2.6.6
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changed\n\n* Updated the `com.unity.burst` dependency
+    to version `1.8.28`\n\n\n### Fixed\n\n* NativeBitArray and UnsafeBitArray now
+    correctly find contiguous sequences of 0-bits up to 6 bits in length.\n\n###
+    Security"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 9796e5ee0d9ef6933fcf11656c00048965f09994
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.6.6
+    minimumUnityVersion: 2022.3.20f1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.searcher@4.9.4
   testable: 0
   isDirectDependency: 0
   version: 4.9.4
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.searcher@d45a78918735
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.searcher@d45a78918735
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -5662,7 +6772,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.8.29
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.burst@6bb9aca3ef38
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.burst@6bb9aca3ef38
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -5903,330 +7013,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.mathematics@1.3.3
-  testable: 0
-  isDirectDependency: 0
-  version: 1.3.3
-  source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.mathematics@19a9377c4ffa
-  assetPath: Packages/com.unity.mathematics
-  name: com.unity.mathematics
-  displayName: Mathematics
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: Unity's C# SIMD math library providing vector types and math functions
-    with a shader like syntax.
-  errors: []
-  versions:
-    all:
-    - 0.0.12-preview.2
-    - 0.0.12-preview.5
-    - 0.0.12-preview.8
-    - 0.0.12-preview.10
-    - 0.0.12-preview.11
-    - 0.0.12-preview.13
-    - 0.0.12-preview.17
-    - 0.0.12-preview.19
-    - 0.0.12-preview.20
-    - 1.0.0-preview.1
-    - 1.0.1
-    - 1.1.0-preview.1
-    - 1.1.0
-    - 1.2.1
-    - 1.2.4
-    - 1.2.5
-    - 1.2.6
-    - 1.3.1
-    - 1.3.2
-    - 1.3.3
-    compatible:
-    - 1.3.3
-    recommended: 1.3.3
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - unity
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638950052122000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.mathematics@1.3/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/Unity.Mathematics.git
-    revision: 1695a8503482a3131be78cc26308a93f82c05b04
-    path: 
-  unityLifecycle:
-    version: 1.3.3
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n* Fixed `math.hash` crash when using IL2CPP
-    builds on Arm 32 bit devices.\n* Fixed obsolete method usage warnings for `MatrixDrawer.CanCacheInspectorGUI`
-    and `PrimitiveVectorDrawer.CanCacheInspectorGUI` in UNITY_2023_2_OR_NEWER.\n*
-    Updated minimum editor version to 2021.3"}'
-  signature:
-    status: 1
-    reason: Signature is ok
-    attestation:
-      format: archive
-      publishingChannel: unity
-      entitlementKeys: []
-      ownerOrgName: 
-      ownerOrgId: 
-      publisherName: 
-    errorCode: 
-  assetStore:
-    productId: 
-  fingerprint: 19a9377c4ffa59370edad3e6a34e4445529badde
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.3.3
-    minimumUnityVersion: 2021.3
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.collections@2.6.6
-  testable: 0
-  isDirectDependency: 0
-  version: 2.6.6
-  source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.collections@9796e5ee0d9e
-  assetPath: Packages/com.unity.collections
-  name: com.unity.collections
-  displayName: Collections
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: A C# collections library providing data structures that can be used
-    in jobs, and optimized by Burst compiler.
-  errors: []
-  versions:
-    all:
-    - 0.0.9-preview.1
-    - 0.0.9-preview.2
-    - 0.0.9-preview.3
-    - 0.0.9-preview.4
-    - 0.0.9-preview.5
-    - 0.0.9-preview.6
-    - 0.0.9-preview.7
-    - 0.0.9-preview.8
-    - 0.0.9-preview.9
-    - 0.0.9-preview.10
-    - 0.0.9-preview.11
-    - 0.0.9-preview.12
-    - 0.0.9-preview.13
-    - 0.0.9-preview.14
-    - 0.0.9-preview.15
-    - 0.0.9-preview.16
-    - 0.0.9-preview.17
-    - 0.0.9-preview.18
-    - 0.0.9-preview.19
-    - 0.0.9-preview.20
-    - 0.1.0-preview
-    - 0.1.1-preview
-    - 0.2.0-preview.13
-    - 0.3.0-preview.0
-    - 0.4.0-preview.6
-    - 0.5.0-preview.9
-    - 0.5.1-preview.11
-    - 0.5.2-preview.8
-    - 0.6.0-preview.9
-    - 0.7.0-preview.2
-    - 0.7.1-preview.3
-    - 0.8.0-preview.5
-    - 0.9.0-preview.5
-    - 0.9.0-preview.6
-    - 0.11.0-preview.17
-    - 0.12.0-preview.13
-    - 0.14.0-preview.16
-    - 0.15.0-preview.21
-    - 0.17.0-preview.18
-    - 1.0.0-pre.3
-    - 1.0.0-pre.5
-    - 1.0.0-pre.6
-    - 1.1.0
-    - 1.2.3-pre.1
-    - 1.2.3
-    - 1.2.4
-    - 1.3.1
-    - 1.4.0
-    - 1.5.1
-    - 1.5.2
-    - 2.1.0-exp.4
-    - 2.1.0-pre.2
-    - 2.1.0-pre.6
-    - 2.1.0-pre.11
-    - 2.1.0-pre.18
-    - 2.1.1
-    - 2.1.4
-    - 2.2.0
-    - 2.2.1
-    - 2.3.0-exp.1
-    - 2.3.0-pre.3
-    - 2.4.0-exp.2
-    - 2.4.0-pre.2
-    - 2.4.0-pre.5
-    - 2.4.0
-    - 2.4.1
-    - 2.4.2
-    - 2.4.3
-    - 2.5.0-exp.1
-    - 2.5.0-pre.2
-    - 2.5.1
-    - 2.5.2
-    - 2.5.3
-    - 2.5.7
-    - 2.6.0-exp.2
-    - 2.6.0-pre.3
-    - 2.6.0-pre.4
-    - 2.6.2
-    - 2.6.3
-    - 2.6.4
-    - 2.6.5
-    - 2.6.6
-    - 2.6.7
-    - 2.6.8
-    - 2.7.1
-    compatible:
-    - 2.6.6
-    - 2.6.7
-    - 2.6.8
-    - 2.7.1
-    recommended: 2.6.8
-    deprecated: []
-  dependencies:
-  - name: com.unity.burst
-    version: 1.8.28
-  - name: com.unity.mathematics
-    version: 1.3.2
-  - name: com.unity.test-framework
-    version: 1.4.6
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
-  - name: com.unity.test-framework.performance
-    version: 3.0.3
-  resolvedDependencies:
-  - name: com.unity.burst
-    version: 1.8.29
-  - name: com.unity.mathematics
-    version: 1.3.3
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.test-framework
-    version: 1.6.0
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
-  - name: com.unity.test-framework.performance
-    version: 3.5.0
-  keywords:
-  - dots
-  - collections
-  - unity
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 639126363706650000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collections@2.6/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/dots.git
-    revision: 233b7df164f9829fad832775f3875c0379155347
-    path: 
-  unityLifecycle:
-    version: 2.6.6
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Changed\n\n* Updated the `com.unity.burst` dependency
-    to version `1.8.28`\n\n\n### Fixed\n\n* NativeBitArray and UnsafeBitArray now
-    correctly find contiguous sequences of 0-bits up to 6 bits in length.\n\n###
-    Security"}'
-  signature:
-    status: 1
-    reason: Signature is ok
-    attestation:
-      format: archive
-      publishingChannel: unity
-      entitlementKeys: []
-      ownerOrgName: 
-      ownerOrgId: 
-      publisherName: 
-    errorCode: 
-  assetStore:
-    productId: 
-  fingerprint: 9796e5ee0d9ef6933fcf11656c00048965f09994
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.6.6
-    minimumUnityVersion: 2022.3.20f1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
 - packageId: com.unity.nuget.mono-cecil@1.11.6
   testable: 0
   isDirectDependency: 0
   version: 1.11.6
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -6331,7 +7123,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.5.0
   source: 1
-  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0
+  resolvedPath: C:\Users\admin\Desktop\Whack-a-mole\Whack-a-mole\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API

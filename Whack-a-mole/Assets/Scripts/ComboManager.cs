@@ -96,7 +96,7 @@ public class ComboManager : MonoBehaviour
         if (comboText != null)
         {
             comboText.text =
-                "COMBO : " + combo;
+                "ÄÞº¸ : " + combo;
         }
 
         if (multiplierText != null)
